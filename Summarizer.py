@@ -1,9 +1,11 @@
+# load libraries
 import nltk
 from sumy.parsers.html import HtmlParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.luhn import LuhnSummarizer
 from sumy.nlp.stemmers import Stemmer
 
+# define function for extracting and summarizing text from web articles
 def summarizer(url,sentence_count):
     LANGUAGE = "english"
     SENTENCE_COUNT = sentence_count
